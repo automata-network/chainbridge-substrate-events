@@ -1,4 +1,4 @@
-module github.com/ryuh1/chainbridge-substrate-events
+module github.com/automata-network/chainbridge-substrate-events
 
 go 1.13
 

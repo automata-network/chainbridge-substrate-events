@@ -1,4 +1,4 @@
-module github.com/Phala-Network/chainbridge-substrate-events
+module github.com/ryuh1/chainbridge-substrate-events
 
 go 1.13
 

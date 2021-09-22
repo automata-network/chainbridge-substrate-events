@@ -4,7 +4,7 @@ import (
 	"github.com/automata-network/go-substrate-rpc-client/v3/types"
 )
 
-type Events struct {
+type ChainBridgeEvents struct {
 	ChainBridge_FungibleTransfer        []EventFungibleTransfer        //nolint:stylecheck,golint
 	ChainBridge_NonFungibleTransfer     []EventNonFungibleTransfer     //nolint:stylecheck,golint
 	ChainBridge_GenericTransfer         []EventGenericTransfer         //nolint:stylecheck,golint
@@ -18,6 +18,10 @@ type Events struct {
 	ChainBridge_ProposalRejected        []EventProposalRejected        //nolint:stylecheck,golint
 	ChainBridge_ProposalSucceeded       []EventProposalSucceeded       //nolint:stylecheck,golint
 	ChainBridge_ProposalFailed          []EventProposalFailed          //nolint:stylecheck,golint
+}
+
+type BridgeTransferEvents struct {
+	BridgeTransfer_FeeUpdated []EventFeeUpdated //nolint:stylecheck,golint
 }
 
 type EventFungibleTransfer struct {
@@ -116,4 +120,13 @@ type EventProposalFailed struct {
 	SourceId     types.U8
 	DepositNonce types.U64
 	Topics       []types.Hash
+}
+
+// pallet bridge-transfer
+type EventFeeUpdated struct {
+	Phase    types.Phase
+	ChainID  types.U8
+	MinFee   types.U128
+	FeeScale types.U32
+	Topics   []types.Hash
 }

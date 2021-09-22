@@ -57,6 +57,8 @@ github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da/go.mod h1:Q73ZrmV
 github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
 github.com/automata-network/go-substrate-rpc-client/v3 v3.0.3-0.20210921071849-38b9e5d1286b h1:Orn80qhyju2dyc+A1iBBXGR8V6bL65VwtKs6uIxnc/8=
 github.com/automata-network/go-substrate-rpc-client/v3 v3.0.3-0.20210921071849-38b9e5d1286b/go.mod h1:rxWRs30mHdqGoqG1/VjHbN1BcE4Jz/lu5Qe2KfwTRHI=
+github.com/automata-network/go-substrate-rpc-client/v3 v3.0.3-0.20210922081404-b42e5fac7757 h1:LB7ZBUEOqGH5FsiZWPx0Jn/wkZkwEaeITGGUHAdu5aQ=
+github.com/automata-network/go-substrate-rpc-client/v3 v3.0.3-0.20210922081404-b42e5fac7757/go.mod h1:rxWRs30mHdqGoqG1/VjHbN1BcE4Jz/lu5Qe2KfwTRHI=
 github.com/aws/aws-sdk-go v1.25.48/go.mod h1:KmX6BPdI08NWTb3/sm4ZGu5ShLoqVDhKgpiN924inxo=
 github.com/aws/aws-sdk-go-v2 v1.2.0/go.mod h1:zEQs02YRBw1DjK0PoJv3ygDYOFTre1ejlJWl8FwAuQo=
 github.com/aws/aws-sdk-go-v2/config v1.1.1/go.mod h1:0XsVy9lBI/BCXm+2Tuvt39YmdHwS5unDQmxZOYe8F5Y=

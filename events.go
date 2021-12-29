@@ -21,7 +21,12 @@ type ChainBridgeEvents struct {
 }
 
 type BridgeTransferEvents struct {
-	BridgeTransfer_FeeUpdated []EventFeeUpdated //nolint:stylecheck,golint
+	BridgeTransfer_FeeUpdated                []EventFeeUpdated                //nolint:stylecheck,golint
+	BridgeTransfer_BridgeFungibleTransferOut []EventBridgeFungibleTransferOut //nolint:stylecheck,golint
+}
+
+type GameEvents struct {
+	Game_AttackBoss []EventAttackBoss
 }
 
 type EventFungibleTransfer struct {
@@ -129,4 +134,18 @@ type EventFeeUpdated struct {
 	MinFee   types.U128
 	FeeScale types.U32
 	Topics   []types.Hash
+}
+
+type EventBridgeFungibleTransferOut struct {
+	Phase     types.Phase
+	Sender    types.AccountID
+	Recipient types.Bytes
+	Amount    types.U256
+	Topics    []types.Hash
+}
+
+type EventAttackBoss struct {
+	Phase        types.Phase
+	Participants []types.AccountID
+	Topics       []types.Hash
 }
